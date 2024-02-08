@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;700&family=League+Spartan:wght@200;300&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="/style.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div id="header">
+        <a href="#">
+            <img src="/img/logo.png" class="logo" alt="Logo" width="200px">
+        </a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="cart.html">
+                        <i class="fa-solid fa-cart-shopping" style="color: #99beae;"></i>
+                        <span id="cartCount">0</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html"><i class="fa-regular fa-user" style="color: #99beae;"></i></a>
+                </li>
+        </div>
+    </div>
+    <div class="container">
+        <form id="form">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="usrname">Username</label>
+            <input type="text" id="usrname" name="usrname" required>
+            <label for="psw">Password</label>
+            <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+            <span id="showPassword" class="show-password">
+                    <i id="show" class="fas fa-eye-slash"></i> 
+                    <i id="hide" class="fas fa-eye;"></i> 
+                </span>
+            <label for="confirmPsw">Confirm Password</label>
+            <input type="password" id="confirmPsw" name="confirmPsw" required>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+    </div>
+
+
+
+    <div class="alert alert-success alert-dismissible fade" id="successAlert" role="alert" style="display: none;">
+        Submit successful!
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <footer>
+        <div class="col ">
+            <img class="logo " src="/img/logo.png " alt=" ">
+            <h4>Contact</h4>
+            <p><span>Address:</span> Mall of Egypt,6th October ,Cairo, Egypt.</p>
+            <p><span>Phone:</span>+201234567890</p>
+            <p><span>WorkHours:</span>12:00pm - 10:00pm</p>
+            <div class="social ">
+                <h4>Follow us</h4>
+                <div class="icon ">
+                    <i class="fab fa-facebook-f " style="color:#12372A "></i>
+                    <i class="fab fa-instagram " style=" color:#12372A "></i>
+                    <i class="fab fa-twitter " style="color:#12372A "></i>
+                    <i class=" fab fa-youtube " style="color:#12372A "></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col ">
+            <h4>About</h4>
+            <a href="# ">About us</a>
+            <a href="# ">Delivery Information</a>
+            <a href="# ">Privacy Policy</a>
+            <a href="# ">Terms & Condations</a>
+            <a href="# ">Contact Us</a>
+        </div>
+
+        <div class="col ">
+            <h4>My Account</h4>
+            <a href="# ">Sign In</a>
+            <a href="# ">View Cart</a>
+            <a href="# ">My wishlist</a>
+            <a href="# ">Track My order</a>
+            <a href="# ">Help</a>
+        </div>
+
+        <div class="col-install ">
+            <h4>Download Our App</h4>
+            <div class="row ">
+                <img src="/img/pay/app.jpg " alt="install ">
+                <img src="/img/pay/play.jpg " alt="install ">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="/img/pay/pay.png " alt=" ">
+        </div>
+        <br>
+        <div class="copyright ">
+            <p>&#169; 2024, All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="/login.js "></script>
+
+</body>
+
+</html>
